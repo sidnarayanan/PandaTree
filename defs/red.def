@@ -1,0 +1,19 @@
+[TruthJet>GenJet]
+constituents/GenParticleRefVector
+#include "GenJet.h"
+
+{EventRed>EventBase}
+npv/s
+rho/F
+pfCandidates/PFCandCollection(2048)
+genParticles/GenParticleCollection(256)
+recoJets/FatJetCollection(8)
+recoSubjets/MicroJetCollection(16)
+truthJets/TruthJetCollection(8)
+genJets/GenJetCollection(32)
+recoJets.constituents->pfCandidates
+recoJets.subjets->recoSubjets
+recoJets.matchedGenJet->genJets
+truthJets.constituents->genParticles
+#include "Event.h"
+#include "TruthJet.h"
