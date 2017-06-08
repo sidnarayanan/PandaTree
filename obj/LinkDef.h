@@ -31,11 +31,13 @@
 #include "../Objects/interface/Recoil.h"
 #include "../Objects/interface/XPhoton.h"
 #include "../Objects/interface/TPPair.h"
+#include "../Objects/interface/TruthJet.h"
 #include "../Objects/interface/EventBase.h"
 #include "../Objects/interface/Event.h"
 #include "../Objects/interface/Run.h"
 #include "../Objects/interface/EventMonophoton.h"
 #include "../Objects/interface/EventTPPhoton.h"
+#include "../Objects/interface/EventRed.h"
 
 #ifdef __CLING__
 #pragma link off all globals;
@@ -82,6 +84,7 @@
 #pragma link C++ class panda::Recoil;
 #pragma link C++ class panda::XPhoton;
 #pragma link C++ class panda::TPPair;
+#pragma link C++ class panda::TruthJet;
 #pragma link C++ class panda::Array<panda::Particle>;
 #pragma link C++ class panda::Collection<panda::Particle>;
 #pragma link C++ class panda::Array<panda::Vertex>;
@@ -130,6 +133,8 @@
 #pragma link C++ class panda::Collection<panda::XPhoton>;
 #pragma link C++ class panda::Array<panda::TPPair>;
 #pragma link C++ class panda::Collection<panda::TPPair>;
+#pragma link C++ class panda::Array<panda::TruthJet>;
+#pragma link C++ class panda::Collection<panda::TruthJet>;
 #pragma link C++ typedef panda::ParticleArray;
 #pragma link C++ typedef panda::ParticleCollection;
 #pragma link C++ typedef panda::VertexArray;
@@ -178,10 +183,13 @@
 #pragma link C++ typedef panda::XPhotonCollection;
 #pragma link C++ typedef panda::TPPairArray;
 #pragma link C++ typedef panda::TPPairCollection;
+#pragma link C++ typedef panda::TruthJetArray;
+#pragma link C++ typedef panda::TruthJetCollection;
 #pragma link C++ class panda::EventBase;
 #pragma link C++ class panda::Event;
 #pragma link C++ class panda::Run;
 #pragma link C++ class panda::EventMonophoton;
 #pragma link C++ class panda::EventTPPhoton;
+#pragma link C++ class panda::EventRed;
 
 #endif
